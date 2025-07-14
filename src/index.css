@@ -1,409 +1,400 @@
-    /* General Styles */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f7f6;
-      color: #333;
-      line-height: 1.6;
-    }
+/* General Styles (from Commit 1) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+}
 
-    .app-container {
-      max-width: 960px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    }
+.app-container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
 
-    /* Header Styles */
-    .app-header {
-      text-align: center;
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #eee;
-    }
+/* Header Styles (from Commit 1) */
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
 
-    .app-header h1 {
-      color: #2c3e50;
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
+.app-header h1 {
+  color: #2c3e50;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
 
-    .app-header p {
-      color: #7f8c8d;
-      font-size: 1.1em;
-    }
+.app-header p {
+  color: #7f8c8d;
+  font-size: 1.1em;
+}
 
-    /* Main Content Area */
-    .app-main-content {
-      padding: 20px 0;
-    }
-    /* Form Styles */
-    .form-container {
-      background-color: #fdfdfd;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      margin-bottom: 30px;
-      border: 1px solid #e0e0e0;
-    }
+/* Main Content Area (from Commit 1) */
+.app-main-content {
+  padding: 20px 0;
+}
 
-    .form-container h2 {
-      font-size: 1.8em;
-      color: #2c3e50;
-      margin-bottom: 25px;
-      text-align: center;
-    }
+/* Form Styles (from Commit 2) */
+.form-container {
+  background-color: #fdfdfd;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  border: 1px solid #e0e0e0;
+}
 
-    .form-group {
-      margin-bottom: 18px;
-    }
+.form-container h2 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+}
 
-    .form-group label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: bold;
-      color: #555;
-      font-size: 0.95em;
-    }
+.form-group {
+  margin-bottom: 18px;
+}
 
-    .form-group input[type="text"],
-    .form-group select,
-    .form-group textarea {
-      width: calc(100% - 20px); /* Adjust for padding */
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1em;
-      box-sizing: border-box; /* Include padding in width */
-    }
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+  font-size: 0.95em;
+}
 
-    .form-group textarea {
-      resize: vertical;
-      min-height: 80px;
-    }
+.form-group input[type="text"],
+.form-group select,
+.form-group textarea {
+  width: calc(100% - 20px); /* Adjust for padding */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box; /* Include padding in width */
+}
 
-    .submit-button {
-      display: block;
-      width: 100%;
-      padding: 12px 20px;
-      background-color: #3498db;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 1.1em;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
 
-    .submit-button:hover {
-      background-color: #2980b9;
-    }
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-    .book-list-placeholder {
-        margin-top: 30px;
-        padding: 20px;
-        background-color: #f0f3f2;
-        border-radius: 8px;
-        border: 1px dashed #d0d0d0;
-        text-align: center;
-    }
+.submit-button:hover {
+  background-color: #2980b9;
+}
 
-    .book-list-placeholder h3 {
-        font-size: 1.5em;
-        color: #2c3e50;
-        margin-bottom: 15px;
-    }
+.book-list-placeholder {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f3f2;
+    border-radius: 8px;
+    border: 1px dashed #d0d0d0;
+    text-align: center;
+}
 
-    .book-list-placeholder ul {
-        list-style: none;
-        padding: 0;
-    }
+.book-list-placeholder h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
 
-    .book-list-placeholder li {
-        background-color: #e9ecef;
-        margin-bottom: 8px;
-        padding: 10px;
-        border-radius: 4px;
-        color: #444;
-    }
-        /* Table Styles */
-    .book-list-container {
-      background-color: #fdfdfd;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba[0, 0, 0, 0.05];
-      border: 1px solid #e0e0e0;
-    }
+.book-list-placeholder ul {
+    list-style: none;
+    padding: 0;
+}
 
-    .book-list-container h2 {
-      font-size: 1.8em;
-      color: #2c3e50;
-      margin-bottom: 25px;
-      text-align: center;
+.book-list-placeholder li {
+    background-color: #e9ecef;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 4px;
+    color: #444;
+}
+
+/* Table Styles (from Commit 3) */
+.book-list-container {
+  background-color: #fdfdfd;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+}
+
+.book-list-container h2 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.empty-list-message {
+  text-align: center;
+  color: #7f8c8d;
+  padding: 20px;
+  border: 1px dashed #d0d0d0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.table-responsive {
+    overflow-x: auto; /* Ensures table is scrollable on small screens */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #e9ecef;
+  color: #555;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+
+table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.status-label {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.status-to-read { background-color: #95a5a6; } /* Grey */
+.status-reading { background-color: #3498db; } /* Blue */
+.status-completed { background-color: #27ae60; } /* Green */
+
+.status-select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.9em;
+}
+
+.notes-textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.no-notes {
+    color: #999;
+    font-style: italic;
+}
+
+.actions-cell {
+  white-space: nowrap; /* Prevent buttons from wrapping */
+}
+
+.action-button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85em;
+  transition: background-color 0.2s ease;
+}
+
+.edit-button {
+  background-color: #f39c12; /* Orange */
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #e67e22;
+}
+
+.delete-button {
+  background-color: #e74c3c; /* Red */
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+.save-button {
+  background-color: #2ecc71; /* Emerald Green */
+  color: white;
+}
+
+.save-button:hover {
+  background-color: #27ae60;
+}
+
+.cancel-button {
+  background-color: #bdc3c7; /* Light Grey */
+  color: #333;
+}
+
+.cancel-button:hover {
+  background-color: #95a5a6;
+}
+
+/* Filter Controls Layout (from Commit 4) */
+.filter-controls {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    gap: 15px; /* Space between items */
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+    align-items: center; /* Vertically align items */
+}
+
+.search-input {
+    flex-grow: 1; /* Allows search input to take up available space */
+    min-width: 200px; /* Minimum width before wrapping */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.status-filter-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Responsive adjustments for filter controls */
+@media (max-width: 600px) {
+    .filter-controls {
+        flex-direction: column; /* Stack items vertically on very small screens */
+        align-items: stretch; /* Stretch items to full width */
     }
-
-    .empty-list-message {
-      text-align: center;
-      color: #7f8c8d;
-      padding: 20px;
-      border: 1px dashed #d0d0d0;
-      border-radius: 5px;
-      background-color: #f9f9f9;
-    }
-
-    .table-responsive {
-        overflow-x: auto; /* Ensures table is scrollable on small screens */
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    table th, table td {
-      padding: 12px 15px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-
-    table th {
-      background-color: #e9ecef;
-      color: #555;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 0.85em;
-    }
-
-    table tbody tr:hover {
-      background-color: #f5f5f5;
-    }
-
-    .status-label {
-      display: inline-block;
-      padding: 5px 10px;
-      border-radius: 15px;
-      font-size: 0.8em;
-      font-weight: bold;
-      color: white;
-      text-align: center;
-    }
-
-    .status-to-read { background-color: #95a5a6; } /* Grey */
-    .status-reading { background-color: #3498db; } /* Blue */
-    .status-completed { background-color: #27ae60; } /* Green */
-
-    .status-select {
-        padding: 5px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        font-size: 0.9em;
-    }
-
-    .notes-textarea {
+    .search-input, .status-filter-select {
         width: 100%;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 0.9em;
-        box-sizing: border-box;
-        resize: vertical;
     }
+}
 
-    .no-notes {
-        color: #999;
-        font-style: italic;
-    }
+/* Summary Dashboard Styles (New for Commit 6) */
+.summary-container {
+    background-color: #fdfdfd;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    border: 1px solid #e0e0e0;
+}
 
-    .actions-cell {
-      white-space: nowrap; /* Prevent buttons from wrapping */
-    }
+.summary-container h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    text-align: center;
+}
 
-    .action-button {
-      padding: 8px 12px;
-      margin-left: 5px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 0.85em;
-      transition: background-color 0.2s ease;
-    }
+.summary-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
 
-    .edit-button {
-      background-color: #f39c12; /* Orange */
-      color: white;
-    }
+.summary-card {
+    flex: 1; /* Allows cards to grow and shrink */
+    min-width: 180px; /* Minimum width for cards before wrapping */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+}
 
-    .edit-button:hover {
-      background-color: #e67e22;
-    }
+.summary-card:hover {
+    transform: translateY(-5px);
+}
 
-    .delete-button {
-      background-color: #e74c3c; /* Red */
-      color: white;
-    }
+.summary-count {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
 
-    .delete-button:hover {
-      background-color: #c0392b;
-    }
+.summary-label {
+    font-size: 1.1em;
+    color: #555;
+}
 
-    .save-button {
-      background-color: #2ecc71; /* Emerald Green */
-      color: white;
-    }
+/* Specific colors for summary cards */
+.status-to-read-card {
+    background-color: #ecf0f1; /* Light grey */
+    border: 1px solid #bdc3c7;
+}
+.status-to-read-card .summary-count {
+    color: #7f8c8d;
+}
 
-    .save-button:hover {
-      background-color: #27ae60;
-    }
+.status-reading-card {
+    background-color: #e0f2f7; /* Light blue */
+    border: 1px solid #aed6f1;
+}
+.status-reading-card .summary-count {
+    color: #3498db;
+}
 
-    .cancel-button {
-      background-color: #bdc3c7; /* Light Grey */
-      color: #333;
-    }
+.status-completed-card {
+    background-color: #e6f7ed; /* Light green */
+    border: 1px solid #a2d9a3;
+}
+.status-completed-card .summary-count {
+    color: #27ae60;
+}
 
-    .cancel-button:hover {
-      background-color: #95a5a6;
+/* Responsive adjustments for summary cards */
+@media (max-width: 768px) {
+    .summary-cards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: stretch;
     }
-    
-    /* Table Styles */
-    .book-list-container {
-      background-color: #fdfdfd;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba[0, 0, 0, 0.05];
-      border: 1px solid #e0e0e0;
+    .summary-card {
+        min-width: unset; /* Remove min-width when stacked */
     }
-
-    .book-list-container h2 {
-      font-size: 1.8em;
-      color: #2c3e50;
-      margin-bottom: 25px;
-      text-align: center;
-    }
-
-    .empty-list-message {
-      text-align: center;
-      color: #7f8c8d;
-      padding: 20px;
-      border: 1px dashed #d0d0d0;
-      border-radius: 5px;
-      background-color: #f9f9f9;
-    }
-
-    .table-responsive {
-        overflow-x: auto; /* Ensures table is scrollable on small screens */
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    table th, table td {
-      padding: 12px 15px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-
-    table th {
-      background-color: #e9ecef;
-      color: #555;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 0.85em;
-    }
-
-    table tbody tr:hover {
-      background-color: #f5f5f5;
-    }
-
-    .status-label {
-      display: inline-block;
-      padding: 5px 10px;
-      border-radius: 15px;
-      font-size: 0.8em;
-      font-weight: bold;
-      color: white;
-      text-align: center;
-    }
-
-    .status-to-read { background-color: #95a5a6; } /* Grey */
-    .status-reading { background-color: #3498db; } /* Blue */
-    .status-completed { background-color: #27ae60; } /* Green */
-
-    .status-select {
-        padding: 5px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        font-size: 0.9em;
-    }
-
-    .notes-textarea {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 0.9em;
-        box-sizing: border-box;
-        resize: vertical;
-    }
-
-    .no-notes {
-        color: #999;
-        font-style: italic;
-    }
-
-    .actions-cell {
-      white-space: nowrap; /* Prevent buttons from wrapping */
-    }
-
-    .action-button {
-      padding: 8px 12px;
-      margin-left: 5px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 0.85em;
-      transition: background-color 0.2s ease;
-    }
-
-    .edit-button {
-      background-color: #f39c12; /* Orange */
-      color: white;
-    }
-
-    .edit-button:hover {
-      background-color: #e67e22;
-    }
-
-    .delete-button {
-      background-color: #e74c3c; /* Red */
-      color: white;
-    }
-
-    .delete-button:hover {
-      background-color: #c0392b;
-    }
-
-    .save-button {
-      background-color: #2ecc71; /* Emerald Green */
-      color: white;
-    }
-
-    .save-button:hover {
-      background-color: #27ae60;
-    }
-
-    .cancel-button {
-      background-color: #bdc3c7; /* Light Grey */
-      color: #333;
-    }
-
-    .cancel-button:hover {
-      background-color: #95a5a6;
-    }
-    
+}
