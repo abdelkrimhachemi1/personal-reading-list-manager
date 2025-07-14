@@ -1,12 +1,28 @@
 import React, { useState } from 'react';
 import AddBookForm from './components/AddBookForm';
+import BookList from './components/BookList';
 
 function App() {
-  const [books, setBooks] = useState([]); // State to hold our books
+  const [books, setBooks] = useState([]);
+  const [nextId, setNextId] = useState(1); // Simple ID generator for now
 
-  const handleAddBook = (newBook) => {
-    setBooks([...books, newBook]);
-    alert('Book added successfully!'); // Using alert as per coursework context
+  const handleAddBook = (newBookData) => {
+    const bookWithId = { ...newBookData, id: nextId };
+    setBooks([...books, bookWithId]);
+    setNextId(nextId + 1);
+    alert('Book added successfully!');
+  };
+
+  const handleUpdateBook = (id, updatedData) => {
+    setBooks(books.map(book =>
+      book.id === id ? { ...book, ...updatedData } : book
+    ));
+    alert('Book updated successfully!');
+  };
+
+  const handleDeleteBook = (id) => {
+    setBooks(books.filter(book => book.id !== id));
+    alert('Book deleted successfully!');
   };
 
   return (
@@ -17,19 +33,11 @@ function App() {
       </header>
       <main className="app-main-content">
         <AddBookForm onAddBook={handleAddBook} />
-        {/* Book list will go here later */}
-        <div className="book-list-placeholder">
-          <h3>Your Reading List</h3>
-          {books.length === 0 ? (
-            <p>No books added yet. Add one using the form above!</p>
-          ) : (
-            <ul>
-              {books.map((book, index) => (
-                <li key={index}>{book.title} by {book.author} ({book.status})</li>
-              ))}
-            </ul>
-          )}
-        </div>
+        <BookList
+          books={books}
+          onUpdateBook={handleUpdateBook}
+          onDeleteBook={handleDeleteBook}
+        />
       </main>
     </div>
   );
