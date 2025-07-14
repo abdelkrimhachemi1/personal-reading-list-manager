@@ -1,0 +1,42 @@
+# Personal Reading List Manager
+
+## Project Overview
+This is a minimal and easy-to-use web-based tool designed for individual users to track their reading progress. It serves as a simple digital replacement for notebooks or spreadsheets, focusing on clarity, speed, and usability.
+
+## Features
+* **Add Books:** Users can add new books with title, author, status (To Read, Reading, Completed), and optional notes.
+* **View Books:** All books are displayed in a responsive table.
+* **Update Status/Notes:** Users can easily update the reading status and notes for any book.
+* **Delete Books:** Remove books from the list with a confirmation.
+* **Search/Filter:** Find books by title, author, or status using a search bar and status filter.
+
+## Technologies Used
+* **React:** For building the user interface.
+* **Standard CSS:** For styling the application.
+
+## Setup and Running Locally
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/personal-reading-list-manager.git](https://github.com/YOUR_USERNAME/personal-reading-list-manager.git)
+    cd personal-reading-list-manager
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Run the application:**
+    ```bash
+    npm start
+    ```
+    The application will typically open in your browser at `http://localhost:3000`.
+
+## GitHub History
+This repository's commit history reflects the iterative development process, with commits for:
+* Initial project structure and basic display.
+* Implementation of the Add Book form component.
+* Development of the Book List display with update and delete actions.
+* Addition of search and filter functionalities.
+* Comprehensive README documentation.
+
+## Demo Video (YouTube)
+[Link to your YouTube video here - **VERY IMPORTANT FOR COURSEWORK**]

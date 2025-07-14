@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import AddBookForm from './components/AddBookForm';
 import BookList from './components/BookList';
+import BookSummary from './components/BookSummary'; // Import the new component
 
 function App() {
   const [books, setBooks] = useState([]);
   const [nextId, setNextId] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
-  const [filterStatus, setFilterStatus] = useState('All'); // New state for status filter
+  const [filterStatus, setFilterStatus] = useState('All');
 
   const handleAddBook = (newBookData) => {
     const bookWithId = { ...newBookData, id: nextId };
@@ -42,6 +43,7 @@ function App() {
         <p>Your personal library, organized with ease.</p>
       </header>
       <main className="app-main-content">
+        <BookSummary books={books} /> {/* Add the summary component here */}
         <AddBookForm onAddBook={handleAddBook} />
 
         <div className="filter-controls">
@@ -65,7 +67,7 @@ function App() {
         </div>
 
         <BookList
-          books={filteredBooks} {/* Pass filtered books */}
+          books={filteredBooks}
           onUpdateBook={handleUpdateBook}
           onDeleteBook={handleDeleteBook}
         />
