@@ -40,4 +40,93 @@
     .app-main-content {
       padding: 20px 0;
     }
+    /* Form Styles */
+    .form-container {
+      background-color: #fdfdfd;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      margin-bottom: 30px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .form-container h2 {
+      font-size: 1.8em;
+      color: #2c3e50;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #555;
+      font-size: 0.95em;
+    }
+
+    .form-group input[type="text"],
+    .form-group select,
+    .form-group textarea {
+      width: calc(100% - 20px); /* Adjust for padding */
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+      box-sizing: border-box; /* Include padding in width */
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .submit-button {
+      display: block;
+      width: 100%;
+      padding: 12px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-button:hover {
+      background-color: #2980b9;
+    }
+
+    .book-list-placeholder {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #f0f3f2;
+        border-radius: 8px;
+        border: 1px dashed #d0d0d0;
+        text-align: center;
+    }
+
+    .book-list-placeholder h3 {
+        font-size: 1.5em;
+        color: #2c3e50;
+        margin-bottom: 15px;
+    }
+
+    .book-list-placeholder ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .book-list-placeholder li {
+        background-color: #e9ecef;
+        margin-bottom: 8px;
+        padding: 10px;
+        border-radius: 4px;
+        color: #444;
+    }
     
